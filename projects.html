@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — Mechanical Engineer Portfolio</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <div class="brand"><a href="index.html">Polished Mechanical Portfolio</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section container">
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="lead">Split between polished designs and hands-on builds that have been physically made, 3D printed, welded, or prototyped for real-world testing.</p>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="design">Designs</button>
+          <button class="filter" data-filter="built">Built</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project" data-tags="design">
+            <div class="project-media"></div>
+            <h3 class="project-title">Compact Pump Redesign</h3>
+            <p class="project-desc">Optimized impeller geometry and casing to improve efficiency and reduce cavitation across operating range. Includes CAD, CFD validation, and prototype testing.</p>
+            <div class="project-meta">Tools: SolidWorks, ANSYS Fluent</div>
+          </article>
+
+          <article class="project" data-tags="design">
+            <div class="project-media"></div>
+            <h3 class="project-title">Thermal Stress Analysis — Bracket</h3>
+            <p class="project-desc">FEA-driven redesign to reduce peak stress and simplify manufacturing. Delivered final drawings and validated production run.</p>
+            <div class="project-meta">Tools: Abaqus, MATLAB</div>
+          </article>
+
+          <article class="project" data-tags="built">
+            <div class="project-media"></div>
+            <h3 class="project-title">Rapid Prototyped Valve Actuator</h3>
+            <p class="project-desc">Integrated mechanism for robust actuation using off-the-shelf components and 3D-printed housings. Focused on cycle life and assembly simplicity.</p>
+            <div class="project-meta">Tools: 3D Printing, Arduino</div>
+          </article>
+
+          <article class="project" data-tags="design">
+            <div class="project-media"></div>
+            <h3 class="project-title">Hydraulic Manifold Optimization</h3>
+            <p class="project-desc">Reduced pressure drop and thermal hotspots by reworking flow paths; combined CAD and hand calculations to meet manufacturing constraints.</p>
+            <div class="project-meta">Tools: SolidWorks Flow Simulation</div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© Polished Mechanical Portfolio — Projects showcase.</div>
+    </footer>
+
+    <script src="src/scripts.js"></script>
+  </body>
+</html>
