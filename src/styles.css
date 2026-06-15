@@ -1,6 +1,8 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
+/* Design Tokens */
 :root {
   --bg: #13262f;
   --jet: #13262f;
@@ -13,6 +15,8 @@
   --paper: #ffffff;
   --container: 1200px;
 }
+
+/* Global / Base */
 * {
   box-sizing: border-box;
 }
@@ -41,6 +45,8 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
+
+/* Shared Header / Navigation */
 .header-wrapper {
   position: relative;
 }
@@ -72,6 +78,7 @@ body {
   opacity: 0.9;
 }
 
+/* Home Page */
 .hero {
   width: 100vw;
   position: relative;
@@ -528,6 +535,9 @@ h4 {
   .hero-title .hero-word {
     transition: none !important;
   }
+  .plane-animation {
+    display: none;
+  }
 }
 @keyframes drift {
   from {
@@ -554,6 +564,7 @@ h4 {
   color: var(--paper);
 }
 
+/* Shared Sections / Cards */
 .section {
   padding: 4rem 0;
 }
@@ -599,6 +610,7 @@ h4 {
   border-color: transparent;
 }
 
+/* Projects Page */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -638,6 +650,7 @@ h4 {
   margin-top: 0.6rem;
 }
 
+/* Legacy Contact Form */
 .contact-form {
   display: grid;
   gap: 0.6rem;
@@ -657,6 +670,7 @@ h4 {
   gap: 0.8rem;
 }
 
+/* Contact, Terms, and Privacy Pages */
 .contact-page {
   min-height: 100vh;
   font-family:
@@ -671,6 +685,16 @@ h4 {
   color: var(--white);
   display: flex;
   flex-direction: column;
+}
+
+/* Keep contact page at least one viewport tall but allow footer visibility */
+.contact-page {
+  min-height: 100vh;
+}
+
+.contact-page:not(.terms-page) {
+  height: 100svh;
+  overflow: hidden;
 }
 
 .contact-page a {
@@ -740,14 +764,22 @@ h4 {
 
 .contact-main {
   flex: 1;
-  display: grid;
-  place-items: start center;
-  padding: clamp(3rem, 10vh, 6.5rem) 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.85rem, 2.5vh, 1.5rem);
+  width: 100%;
+  min-height: 0;
+  padding: clamp(0.65rem, 2vh, 1.25rem) 1rem;
+  position: relative;
 }
 
 .contact-card {
   width: min(100%, 680px);
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .contact-kicker,
@@ -831,6 +863,46 @@ h4 {
   border-color: var(--orange);
   color: #111111;
   transform: translateY(-2px);
+}
+
+.plane-animation {
+  width: min(100%, 620px);
+  max-width: 95vw;
+  opacity: 0.72;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.plane-animation svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: clamp(90px, 20vh, 155px);
+  overflow: visible;
+}
+
+.plane-path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.66);
+  stroke-width: 15;
+  stroke-dasharray: 36 68;
+  stroke-linecap: round;
+}
+
+.plane-fill-light {
+  fill: #ffffff;
+}
+
+.plane-fill-mid {
+  fill: #d7dde1;
+}
+
+.plane-fill-soft {
+  fill: #b9c4ca;
+}
+
+.plane-fill-dark {
+  fill: #87959c;
 }
 
 .contact-page a:focus-visible {
@@ -933,9 +1005,11 @@ h4 {
   text-decoration-color: var(--orange);
 }
 
+/* Contact / Legal Responsive */
 @media (max-width: 620px) {
   .contact-header {
     width: min(100% - 1.25rem, 880px);
+    padding: 0.5rem 0 0;
   }
 
   .contact-nav {
@@ -946,7 +1020,9 @@ h4 {
   }
 
   .contact-main {
-    padding-top: 3rem;
+    gap: clamp(0.75rem, 1.8vh, 1rem);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .contact-card h1 {
@@ -957,6 +1033,15 @@ h4 {
     width: min(100%, 320px);
     min-height: 4.1rem;
     border-width: 3px;
+  }
+
+  .plane-animation {
+    width: min(100%, 340px);
+    max-width: 95vw;
+  }
+
+  .plane-animation svg {
+    max-height: clamp(78px, 16vh, 112px);
   }
 
   .contact-footer {
@@ -980,6 +1065,7 @@ h4 {
   color: var(--muted);
 }
 
+/* Site Responsive */
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -999,12 +1085,6 @@ h4 {
   .hero-sub {
     font-size: 1rem;
   }
-  .hero-shape.shape-1 {
-    width: 180px;
-    height: 180px;
-    left: -30px;
-    top: 18%;
-  }
   .hero-shape.shape-2 {
     width: 160px;
     height: 160px;
@@ -1023,7 +1103,59 @@ h4 {
   }
 }
 
-/* subtle reveal animation */
+/* Larger plane size on wider screens */
+@media (min-width: 1000px) {
+  .plane-animation {
+    width: min(100%, 720px);
+  }
+  .plane-animation svg {
+    max-height: clamp(130px, 21vh, 165px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact-main {
+    gap: clamp(1rem, 2.5vh, 1.6rem);
+  }
+}
+
+@media (min-width: 1600px) {
+  .contact-main {
+    gap: clamp(3rem, 5vh, 7rem);
+  }
+
+  .contact-kicker {
+    font-size: 0.9rem;
+  }
+
+  .contact-card h1 {
+    font-size: clamp(3.4rem, 3vw, 4.35rem);
+  }
+
+  .contact-role {
+    font-size: 1.25rem;
+  }
+
+  .contact-details {
+    font-size: 1.08rem;
+  }
+
+  .resume-button {
+    width: min(100%, 340px);
+    min-height: 4.45rem;
+    font-size: 1.58rem;
+  }
+
+  .plane-animation {
+    width: min(100%, 820px);
+  }
+
+  .plane-animation svg {
+    max-height: clamp(165px, 9vh, 210px);
+  }
+}
+
+/* Animation Utilities */
 .fade-in {
   opacity: 0;
   transform: translateY(10px);
