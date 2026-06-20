@@ -80,6 +80,29 @@ document.addEventListener('DOMContentLoaded',()=>{
   const imageGrid=document.querySelector('.image-grid');
   const gridItems=document.querySelectorAll('.grid-item');
   const motionAllowed=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const aboutPlanes=document.querySelectorAll('.about-plane');
+  const resetAboutPlanes=()=>{
+    aboutPlanes.forEach(plane=>{
+      plane.hidden=false;
+      plane.classList.remove('is-flying-away');
+      plane.style.animation='none';
+      plane.offsetHeight;
+      plane.style.animation='';
+    });
+  };
+  aboutPlanes.forEach(plane=>{
+    plane.addEventListener('click',()=>{
+      if(motionAllowed){
+        plane.classList.add('is-flying-away');
+      } else {
+        plane.hidden=true;
+      }
+    });
+  });
+  window.addEventListener('pageshow',event=>{
+    if(event.persisted && aboutPlanes.length) resetAboutPlanes();
+  });
+
   if(hero && heroContent && motionAllowed){
     window.addEventListener('scroll',()=>{
       const rect=hero.getBoundingClientRect();
