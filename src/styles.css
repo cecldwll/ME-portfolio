@@ -684,7 +684,11 @@ h4 {
 
 .skills-showcase {
   position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   margin-bottom: clamp(4.5rem, 10vw, 8rem);
+  overflow: hidden;
 }
 
 .skills-showcase .section-heading {
@@ -693,15 +697,15 @@ h4 {
 }
 
 .skills-parallax {
-  --skills-gallery-width: min(100%, 980px);
-  --skills-gallery-height: clamp(420px, 48vw, 560px);
+  --skills-gallery-width: 100vw;
+  --skills-gallery-height: clamp(460px, 56vw, 700px);
   width: var(--skills-gallery-width);
   height: var(--skills-gallery-height);
   margin-top: clamp(1.75rem, 4vw, 3rem);
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid transparent;
-  border-radius: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+  border-radius: 0;
   background: transparent;
   box-shadow: none;
   overflow: hidden;
@@ -711,13 +715,13 @@ h4 {
 .horizontal-scroll-wrapper {
   width: var(--skills-gallery-height);
   height: var(--skills-gallery-width);
-  padding: clamp(2.25rem, 5vw, 4rem) 0 clamp(6rem, 12vw, 10rem);
+  padding: clamp(2rem, 4vw, 3.5rem) 0 clamp(7rem, 14vw, 12rem);
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
+  gap: clamp(0.6rem, 1.6vw, 1.6rem);
   perspective: 1px;
   transform: rotate(-90deg) translate3d(0, calc(-1 * var(--skills-gallery-height)), 0);
   transform-origin: right top;
@@ -737,57 +741,61 @@ h4 {
 }
 
 .img-wrapper {
-  min-height: 38vh;
+  min-height: clamp(250px, 40vh, 430px);
   display: flex;
   align-items: center;
   justify-content: center;
   transform-origin: 50% 50%;
-  transform: rotate(90deg) translateZ(0.1px) scale(0.9) translateX(-3vh) translateY(0);
+  transform: rotate(90deg) translateZ(0.1px) scale(0.9) translateX(0) translateY(-3vh);
   transition:
     min-height 0.7s ease,
     transform 0.7s ease;
 }
 
 .img-wrapper:hover {
-  min-height: 54vh;
+  min-height: clamp(360px, 62vh, 640px);
 }
 
 .slower {
-  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(-9vh) translateY(0);
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(0) translateY(-10vh);
+}
+
+.slower1 {
+  transform: rotate(90deg) translateZ(-0.25px) scale(1.05) translateX(0) translateY(8vh);
 }
 
 .slower2 {
-  transform: rotate(90deg) translateZ(-0.3px) scale(1.22) translateX(2vh) translateY(0);
+  transform: rotate(90deg) translateZ(-0.3px) scale(1.28) translateX(0) translateY(2vh);
 }
 
 .slower-down {
-  transform: rotate(90deg) translateZ(-0.2px) scale(1.08) translateX(15vh) translateY(0);
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(0) translateY(16vh);
 }
 
 .faster {
-  transform: rotate(90deg) translateZ(0.15px) scale(0.82) translateX(13vh) translateY(0);
+  transform: rotate(90deg) translateZ(0.15px) scale(0.8) translateX(0) translateY(14vh);
 }
 
 .faster1 {
-  transform: rotate(90deg) translateZ(0.05px) scale(0.84) translateX(10vh) translateY(0);
+  transform: rotate(90deg) translateZ(0.05px) scale(0.82) translateX(0) translateY(10vh);
 }
 
 .vertical {
-  transform: rotate(90deg) translateZ(-0.15px) scale(1.12) translateX(0) translateY(0);
+  transform: rotate(90deg) translateZ(-0.15px) scale(1.15) translateX(0) translateY(0);
 }
 
 .last {
-  transform: rotate(90deg) translateZ(-0.2px) scale(1.06) translateX(11vh) translateY(0);
+  transform: rotate(90deg) translateZ(-0.2px) scale(1.1) translateX(25vh) translateY(-8vh);
 }
 
 .portfolio-skill {
-  width: clamp(210px, 32vh, 280px);
-  min-height: clamp(170px, 26vh, 230px);
-  padding: 1.1rem;
-  border: 3px solid var(--white);
+  width: clamp(220px, 34vh, 330px);
+  min-height: clamp(190px, 30vh, 290px);
+  padding: clamp(1rem, 2vh, 1.5rem);
+  border: 0;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.055);
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+  box-shadow: 0 20px 58px rgba(0, 0, 0, 0.34);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -801,15 +809,14 @@ h4 {
 }
 
 .portfolio-skill:hover {
-  background: rgba(250, 169, 22, 0.15);
-  border-color: var(--orange);
+  background: #ffffff;
   transform: translateY(-4px);
 }
 
 .skill-logo {
   width: clamp(4.8rem, 11vh, 6.6rem);
   height: clamp(4.8rem, 11vh, 6.6rem);
-  border: 2px solid rgba(255, 255, 255, 0.78);
+  border: 2px solid rgba(19, 38, 47, 0.16);
   border-radius: 8px;
   display: grid;
   place-items: center;
@@ -826,18 +833,24 @@ h4 {
 }
 
 .portfolio-skill img {
-  width: min(100%, 150px);
-  height: 96px;
+  width: min(100%, 190px);
+  height: clamp(96px, 16vh, 140px);
   display: block;
   object-fit: contain;
-  padding: 0.5rem;
+  padding: 0.65rem;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.86);
+  filter: saturate(42%) sepia(24%) hue-rotate(5deg);
+  transition: filter 0.45s ease;
+}
+
+.portfolio-skill:hover img {
+  filter: none;
 }
 
 .portfolio-skill h3 {
   margin: 0;
-  color: var(--white);
+  color: var(--jet);
   font-family: "Mona Sans", system-ui, sans-serif;
   font-size: clamp(0.86rem, 1.7vh, 1.05rem);
   font-weight: 900;
@@ -973,13 +986,12 @@ h4 {
 
 @media (max-width: 1100px) {
   .skills-parallax {
-    --skills-gallery-width: min(100%, 900px);
-    --skills-gallery-height: clamp(390px, 54vw, 520px);
+    --skills-gallery-height: clamp(430px, 62vw, 640px);
   }
 
   .portfolio-skill {
-    width: clamp(200px, 30vh, 260px);
-    min-height: clamp(165px, 25vh, 215px);
+    width: clamp(205px, 32vh, 285px);
+    min-height: clamp(175px, 28vh, 245px);
   }
 }
 
@@ -989,13 +1001,12 @@ h4 {
   }
 
   .skills-parallax {
-    --skills-gallery-width: min(100%, 720px);
-    --skills-gallery-height: clamp(360px, 62vw, 480px);
+    --skills-gallery-height: clamp(390px, 70vw, 560px);
   }
 
   .portfolio-skill {
-    width: clamp(185px, 28vh, 235px);
-    min-height: clamp(160px, 24vh, 205px);
+    width: clamp(190px, 30vh, 250px);
+    min-height: clamp(165px, 26vh, 220px);
   }
 
   .portfolio-skill img {
@@ -1633,6 +1644,7 @@ h4 {
   .img-wrapper,
   .img-wrapper:hover,
   .slower,
+  .slower1,
   .slower2,
   .slower-down,
   .faster,
