@@ -1,68 +1,190 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Projects â€” Mechanical Engineer Portfolio</title>
+    <title>Projects | Emily Caldwell</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav container">
-        <div class="brand"><a href="index.html">Polished Mechanical Portfolio</a></div>
-        <ul class="nav-links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <body class="projects-page">
+    <header class="contact-header" aria-label="Projects page header">
+      <a class="logo-button" href="index.html" aria-label="Return to home page">
+        <img src="src/logo-placeholder.svg" alt="" width="64" height="64" />
+      </a>
+
+      <nav class="contact-nav" aria-label="Primary navigation">
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <main>
-      <section class="section container">
-        <h2 class="section-title">Selected Projects</h2>
-        <p class="lead">Split between polished designs and hands-on builds that have been physically made, 3D printed, welded, or prototyped for real-world testing.</p>
+    <main class="projects-main">
+      <section class="projects-hero" aria-labelledby="projects-heading">
+        <p class="contact-kicker">Projects</p>
+        <h1 id="projects-heading">Project Archive</h1>
+        <p>
+          Hands-on design and fabrication work across printed plastics, metal
+          shop projects, and practical builds.
+        </p>
+      </section>
 
-        <div class="filters">
-          <button class="filter active" data-filter="all">All</button>
-          <button class="filter" data-filter="design">Designs</button>
-          <button class="filter" data-filter="built">Built</button>
+      <section class="skills-showcase" aria-labelledby="skills-heading">
+        <div class="section-heading">
+          <p class="contact-kicker">Skills</p>
+          <h2 id="skills-heading">Tools &amp; Methods</h2>
         </div>
 
-        <div class="projects-grid" id="projects-grid">
-          <article class="project" data-tags="design">
-            <div class="project-media"></div>
-            <h3 class="project-title">Compact Pump Redesign</h3>
-            <p class="project-desc">Optimized impeller geometry and casing to improve efficiency and reduce cavitation across operating range. Includes CAD, CFD validation, and prototype testing.</p>
-            <div class="project-meta">Tools: SolidWorks, ANSYS Fluent</div>
-          </article>
+        <div class="skills-parallax external">
+          <div class="horizontal-scroll-wrapper" aria-label="Skills gallery">
+            <div class="img-wrapper slower">
+              <article class="portfolio-skill">
+                <span class="skill-logo skill-logo-weld" aria-hidden="true">W</span>
+                <h3>Welding</h3>
+              </article>
+            </div>
 
-          <article class="project" data-tags="design">
-            <div class="project-media"></div>
-            <h3 class="project-title">Thermal Stress Analysis â€” Bracket</h3>
-            <p class="project-desc">FEA-driven redesign to reduce peak stress and simplify manufacturing. Delivered final drawings and validated production run.</p>
-            <div class="project-meta">Tools: Abaqus, MATLAB</div>
-          </article>
+            <div class="img-wrapper faster">
+              <article class="portfolio-skill">
+                <img src="images/logos/fusion360-logo.png" alt="" />
+                <h3>Fusion 360</h3>
+              </article>
+            </div>
 
-          <article class="project" data-tags="built">
-            <div class="project-media"></div>
-            <h3 class="project-title">Rapid Prototyped Valve Actuator</h3>
-            <p class="project-desc">Integrated mechanism for robust actuation using off-the-shelf components and 3D-printed housings. Focused on cycle life and assembly simplicity.</p>
-            <div class="project-meta">Tools: 3D Printing, Arduino</div>
-          </article>
+            <div class="img-wrapper slower vertical">
+              <article class="portfolio-skill">
+                <img src="images/logos/solidworks-logo.png" alt="" />
+                <h3>SolidWorks</h3>
+              </article>
+            </div>
 
-          <article class="project" data-tags="design">
-            <div class="project-media"></div>
-            <h3 class="project-title">Hydraulic Manifold Optimization</h3>
-            <p class="project-desc">Reduced pressure drop and thermal hotspots by reworking flow paths; combined CAD and hand calculations to meet manufacturing constraints.</p>
-            <div class="project-meta">Tools: SolidWorks Flow Simulation</div>
-          </article>
+            <div class="img-wrapper slower slower-down">
+              <article class="portfolio-skill">
+                <img src="images/logos/catia-logo.png" alt="" />
+                <h3>CATIA</h3>
+              </article>
+            </div>
+
+            <div class="img-wrapper">
+              <article class="portfolio-skill">
+                <img src="images/logos/python-logo.png" alt="" />
+                <h3>Python</h3>
+              </article>
+            </div>
+
+            <div class="img-wrapper slower">
+              <article class="portfolio-skill">
+                <img src="images/logos/msexcel-logo.png" alt="" />
+                <h3>Microsoft Excel</h3>
+              </article>
+            </div>
+
+            <div class="img-wrapper faster1">
+              <article class="portfolio-skill">
+                <img src="images/logos/msword-logo.jpg" alt="" />
+                <h3>Microsoft Word</h3>
+              </article>
+            </div>
+
+            <div class="img-wrapper slower slower2 last">
+              <article class="portfolio-skill">
+                <img src="images/logos/mspowerpoint-logo.png" alt="" />
+                <h3>Microsoft PowerPoint</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-archive" aria-labelledby="archive-heading">
+        <div class="section-heading">
+          <p class="contact-kicker">Archive</p>
+          <h2 id="archive-heading">Projects</h2>
+        </div>
+
+        <div class="project-filters" aria-label="Project groups">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="plastics">Plastics</button>
+          <button class="filter" type="button" data-filter="metal">Metal</button>
+          <button class="filter" type="button" data-filter="wood">Wood</button>
+        </div>
+
+        <div class="project-group" aria-labelledby="plastics-heading">
+          <h3 id="plastics-heading">Plastics</h3>
+          <div class="folder-grid">
+            <article class="project folder-card" data-tags="plastics">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Modular Roof Rack System</h4>
+              <p>Custom 3D printed pieces designed in Fusion 360 for mounting gear to a 2000 Jeep Cherokee roof rack.</p>
+            </article>
+            <article class="project folder-card" data-tags="plastics">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Wheel Center Caps</h4>
+              <p>3D printed center caps made to fit family cars and help protect the wheel hubs.</p>
+            </article>
+            <article class="project folder-card" data-tags="plastics">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Misc. Car Parts</h4>
+              <p>Small printed supports, clips, and battery terminal covers for hard-to-replace car parts.</p>
+            </article>
+            <article class="project folder-card" data-tags="plastics">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Planetary Gears</h4>
+              <p>School project with CNC machined gears and a laser cut acrylic case.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group" aria-labelledby="metal-heading">
+          <h3 id="metal-heading">Metal</h3>
+          <div class="folder-grid">
+            <article class="project folder-card" data-tags="metal">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Removable Winch Plate</h4>
+              <p>Designed, cut, and welded hitch receiver mount for carrying a winch during off-road self recovery.</p>
+            </article>
+            <article class="project folder-card" data-tags="metal">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>C-Clamp</h4>
+              <p>School project using lathe-made screw and pad components with a bandsaw and mill-shaped frame.</p>
+            </article>
+            <article class="project folder-card" data-tags="metal">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Tire Changer Upgrades</h4>
+              <p>Reinforced and improved a Harbor Freight tire changer for more practical use.</p>
+            </article>
+            <article class="project folder-card" data-tags="metal">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Metal Die and Stand</h4>
+              <p>Aluminum die milled into shape with a sand cast display stand.</p>
+            </article>
+            <article class="project folder-card" data-tags="metal">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Lathe Tool</h4>
+              <p>Tool steel blank shaped with a grinding wheel into a functional lathe tool.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group" aria-labelledby="wood-heading">
+          <h3 id="wood-heading">Wood</h3>
+          <div class="folder-grid">
+            <article class="project folder-card" data-tags="wood">
+              <div class="folder-tab" aria-hidden="true"></div>
+              <h4>Chicken Coop</h4>
+              <p>Designed and built a chicken coop from spare wood in the family yard.</p>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">Â© Polished Mechanical Portfolio â€” Projects showcase.</div>
+    <footer class="contact-footer">
+      <p>Coded and designed by Caitlyn Caldwell</p>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
     </footer>
 
     <script src="src/scripts.js"></script>

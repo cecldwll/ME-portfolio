@@ -13,14 +13,22 @@ document.addEventListener('DOMContentLoaded',()=>{
   // project filters
   const filters=document.querySelectorAll('.filter');
   const projects=document.querySelectorAll('.project');
+  const projectGroups=document.querySelectorAll('.project-group');
+  const updateProjectGroups=()=>{
+    projectGroups.forEach(group=>{
+      const visibleProjects=group.querySelectorAll('.project:not([hidden])');
+      group.hidden=visibleProjects.length===0;
+    });
+  };
   filters.forEach(btn=>btn.addEventListener('click',()=>{
     filters.forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     const f=btn.dataset.filter;
     projects.forEach(p=>{
       const tags=p.dataset.tags.split(' ');
-      p.style.display=(f==='all' || tags.includes(f))? 'block':'none';
-    })
+      p.hidden=!(f==='all' || tags.includes(f));
+    });
+    updateProjectGroups();
   }))
 
   // hero title animation
@@ -148,7 +156,9 @@ document.addEventListener('DOMContentLoaded',()=>{
       if(e.isIntersecting) e.target.classList.add('visible');
     })
   },{threshold:0.08});
-  document.querySelectorAll('.project, .skill, .hero-title, .lead, .hero-sub, .hero-highlight, .hero-cta, .feature-card, .visual-panel, .section-intro').forEach(el=>{
+  updateProjectGroups();
+
+  document.querySelectorAll('.project, .skill, .portfolio-skill, .hero-title, .lead, .hero-sub, .hero-highlight, .hero-cta, .feature-card, .visual-panel, .section-intro').forEach(el=>{
     el.classList.add('fade-in');io.observe(el);
   });
 });
