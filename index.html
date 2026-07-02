@@ -3,79 +3,75 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Mechanical Engineer Portfolio â€” Prototype</title>
+    <title>Home | Emily Caldwell</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
-  <body>
-    <header class="site-header header-wrapper">
-      <nav class="nav container" aria-label="Primary navigation">
-        <div class="brand"><a href="index.html">Mechanical Engineering Portfolio</a></div>
-        <ul class="nav-links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hero" role="banner">
-        <div class="hero-content container">
-          <h1 class="hero-title">Mechanical engineering portfolio.</h1>
-          <p class="hero-sub">A clean, confident portfolio for a mechanical engineer entering the workforce, focused on real-world design and fabrication experience.</p>
-          <p class="hero-highlight" aria-live="polite" aria-atomic="true">Built around <span class="typed-text"></span></p>
-          <div class="hero-cta">
-            <a class="btn" href="about.html">About</a>
-            <a class="btn btn-outline" href="projects.html">Projects</a>
-          </div>
+  <body class="home-page">
+    <header class="home-hero" aria-labelledby="home-heading">
+      <nav class="home-nav" aria-label="Primary navigation">
+        <a class="home-logo" href="index.html" aria-label="Emily Caldwell home">
+          <img src="src/logo-placeholder.svg" alt="" width="64" height="64" />
+        </a>
+        <div class="home-nav-panel">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
         </div>
-        <span class="hero-shape shape-1" aria-hidden="true"></span>
-        <span class="hero-shape shape-2" aria-hidden="true"></span>
-        <span class="hero-shape shape-3" aria-hidden="true"></span>
+      </nav>
+
+      <div class="home-hero-copy">
+        <p class="home-kicker">Portfolio</p>
+        <h1 id="home-heading">Emily Caldwell</h1>
+        <p>Mechanical Engineer</p>
       </div>
+
     </header>
 
     <main>
-      <section class="image-flow-section">
-        <div class="image-flow-sticky">
-          <div class="image-flow-large" aria-hidden="true"></div>
-          <div class="image-grid" aria-hidden="true">
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
+      <section id="gallery" class="playbook-gallery" aria-label="Portfolio image gallery">
+        <div class="playbook-sticky">
+          <div class="playbook-grid">
+            <div class="playbook-layer">
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+            </div>
+            <div class="playbook-layer">
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+            </div>
+            <div class="playbook-layer">
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+            </div>
+            <div class="playbook-scaler">
+              <img src="images/emily-caldwell-about.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section container">
-        <p class="section-tag">About</p>
-        <h2 class="section-title">About</h2>
-        <p class="lead">A detail-oriented mechanical engineer with hands-on project experience in fluid systems, CAD design, and prototyping. Enjoys solving practical problems with elegant, manufacturable solutions.</p>
-        <div class="skills-grid">
-          <div class="skill">CAD: SolidWorks, Creo</div>
-          <div class="skill">Analysis: FEA, MATLAB</div>
-          <div class="skill">Manufacturing: CNC, sheet metal</div>
-          <div class="skill">Controls & Instrumentation</div>
-        </div>
+      <section class="home-intro" aria-labelledby="home-intro-heading">
+        <p class="contact-kicker">Design. Build. Improve.</p>
+        <h2 id="home-intro-heading">Hands-on mechanical engineering work shaped by practical fabrication experience.</h2>
+        <a class="resume-button" href="projects.html">View Projects</a>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">Â© Polished Mechanical Portfolio â€” Descriptive filler words presenting professional capabilities.</div>
+    <footer class="contact-footer">
+      <p>Coded and designed by Caitlyn Caldwell</p>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
     </footer>
 
     <script src="src/scripts.js"></script>
