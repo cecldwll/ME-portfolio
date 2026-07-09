@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Project Details | Emily Caldwell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" /></noscript>
+    <link rel="stylesheet" href="src/styles.min.css" />
+  </head>
+  <body class="project-detail-page">
+    <header class="contact-header" aria-label="Project detail page header">
+      <a class="logo-button" href="index.html" aria-label="Return to home page">
+        <img src="src/logo-placeholder.svg" alt="" width="64" height="64" />
+      </a>
+
+      <nav class="contact-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="project-detail-main">
+      <a class="project-back-link" href="projects.html">Back to Projects</a>
+
+      <section class="project-detail-hero" aria-labelledby="project-title">
+        <p class="contact-kicker" id="project-category">Project</p>
+        <h1 id="project-title">Project Title</h1>
+        <p id="project-subtitle">One-sentence subtitle or description.</p>
+      </section>
+
+      <section class="project-gallery" aria-label="Project photo gallery">
+        <button class="gallery-button gallery-button-prev" type="button" aria-label="Show previous photo">
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+        <figure class="gallery-frame">
+          <img id="project-gallery-image" src="" alt="" decoding="async" />
+        </figure>
+        <button class="gallery-button gallery-button-next" type="button" aria-label="Show next photo">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+        <div class="gallery-status" id="project-gallery-status" aria-live="polite"></div>
+      </section>
+
+      <section class="project-detail-content" aria-label="Project information">
+        <article class="project-copy-block">
+          <h2>Overview</h2>
+          <div id="project-overview"></div>
+        </article>
+
+        <article class="project-copy-block">
+          <h2>Requirements</h2>
+          <ul id="project-requirements"></ul>
+        </article>
+
+        <article class="project-copy-block">
+          <h2>Skills Used</h2>
+          <ul class="skill-pill-list" id="project-skills"></ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="contact-footer">
+      <p>Coded and designed by Caitlyn Caldwell</p>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+
+    <script src="src/scripts.min.js" defer></script>
+  </body>
+</html>

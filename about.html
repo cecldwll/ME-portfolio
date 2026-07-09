@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>About | Emily Caldwell</title>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" /></noscript>
+    <link rel="stylesheet" href="src/styles.min.css" />
   </head>
   <body class="about-page">
     <header class="contact-header" aria-label="About page header">
@@ -33,7 +37,7 @@
         </button>
 
         <figure class="about-portrait">
-          <img src="images/emily-caldwell-about.jpg" alt="Portrait of Emily Caldwell" />
+          <img src="images/optimized/emily-caldwell-about.webp" alt="Portrait of Emily Caldwell" width="1000" height="1000" decoding="async" />
         </figure>
 
         <div class="about-copy">
@@ -75,6 +79,6 @@
       </div>
     </footer>
 
-    <script src="src/scripts.js"></script>
+    <script src="src/scripts.min.js" defer></script>
   </body>
 </html>

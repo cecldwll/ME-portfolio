@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Projects | Emily Caldwell</title>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" /></noscript>
+    <link rel="stylesheet" href="src/styles.min.css" />
   </head>
   <body class="projects-page">
     <header class="contact-header" aria-label="Projects page header">
@@ -40,56 +44,56 @@
           <div class="horizontal-scroll-wrapper" aria-label="Skills gallery">
             <div class="img-wrapper slower">
               <article class="portfolio-skill">
-                <img src="images/logos/weld-logo.jpg" alt="Picture of Clip art of a welding torch" />
+                <img src="images/optimized/logos/weld-logo.webp" alt="Picture of Clip art of a welding torch" loading="lazy" decoding="async" />
                 <h3>Welding</h3>
               </article>
             </div>
 
             <div class="img-wrapper faster">
               <article class="portfolio-skill">
-                <img src="images/logos/fusion360-logo.png" alt="Picture of Fusion360 Logo" />
+                <img src="images/optimized/logos/fusion360-logo.webp" alt="Picture of Fusion360 Logo" loading="lazy" decoding="async" />
                 <h3>Fusion 360</h3>
               </article>
             </div>
 
             <div class="img-wrapper slower vertical">
               <article class="portfolio-skill">
-                <img src="images/logos/solidworks-logo.png" alt="Picture of Solidworks Logo" />
+                <img src="images/optimized/logos/solidworks-logo.webp" alt="Picture of Solidworks Logo" loading="lazy" decoding="async" />
                 <h3>SolidWorks</h3>
               </article>
             </div>
 
             <div class="img-wrapper slower slower-down">
               <article class="portfolio-skill">
-                <img src="images/logos/catia-logo.png" alt="Picture of CATIA Logo" />
+                <img src="images/optimized/logos/catia-logo.webp" alt="Picture of CATIA Logo" loading="lazy" decoding="async" />
                 <h3>CATIA</h3>
               </article>
             </div>
 
             <div class="img-wrapper">
               <article class="portfolio-skill">
-                <img src="images/logos/python-logo.png" alt="Picture of Python Logo" />
+                <img src="images/optimized/logos/python-logo.webp" alt="Picture of Python Logo" loading="lazy" decoding="async" />
                 <h3>Python</h3>
               </article>
             </div>
 
             <div class="img-wrapper slower1">
               <article class="portfolio-skill">
-                <img src="images/logos/msexcel-logo.png" alt="Picture of Microsoft Excel Logo" />
+                <img src="images/optimized/logos/msexcel-logo.webp" alt="Picture of Microsoft Excel Logo" loading="lazy" decoding="async" />
                 <h3>Microsoft Excel</h3>
               </article>
             </div>
 
             <div class="img-wrapper faster1">
               <article class="portfolio-skill">
-                <img src="images/logos/msword-logo.jpg" alt="Picture of Microsoft Word Logo" />
+                <img src="images/optimized/logos/msword-logo.webp" alt="Picture of Microsoft Word Logo" loading="lazy" decoding="async" />
                 <h3>Microsoft Word</h3>
               </article>
             </div>
 
             <div class="img-wrapper slower slower2 last">
               <article class="portfolio-skill">
-                <img src="images/logos/mspowerpoint-logo.png" alt="Picture of Microsoft Powerpoint Logo" />
+                <img src="images/optimized/logos/mspowerpoint-logo.webp" alt="Picture of Microsoft Powerpoint Logo" loading="lazy" decoding="async" />
                 <h3>Microsoft PowerPoint</h3>
               </article>
             </div>
@@ -113,68 +117,68 @@
         <div class="project-group" aria-labelledby="plastics-heading">
           <h3 id="plastics-heading">Plastics</h3>
           <div class="folder-grid">
-            <article class="project folder-card" data-tags="plastics">
+            <a class="project folder-card" href="project-detail.html?project=modular-roof-rack-system" data-tags="plastics">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Modular Roof Rack System</h4>
               <p>Custom 3D printed pieces designed in Fusion 360 for mounting gear to a 2000 Jeep Cherokee roof rack.</p>
-            </article>
-            <article class="project folder-card" data-tags="plastics">
+            </a>
+            <a class="project folder-card" href="project-detail.html?project=wheel-center-caps" data-tags="plastics">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Wheel Center Caps</h4>
               <p>3D printed center caps made to fit family cars and help protect the wheel hubs.</p>
-            </article>
-            <article class="project folder-card" data-tags="plastics">
+            </a>
+            <a class="project folder-card" href="project-detail.html?project=misc-car-parts" data-tags="plastics">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Misc. Car Parts</h4>
               <p>Small printed supports, clips, and battery terminal covers for hard-to-replace car parts.</p>
-            </article>
-            <article class="project folder-card" data-tags="plastics">
+            </a>
+            <a class="project folder-card" href="project-detail.html?project=planetary-gears" data-tags="plastics">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Planetary Gears</h4>
               <p>School project with CNC machined gears and a laser cut acrylic case.</p>
-            </article>
+            </a>
           </div>
         </div>
 
         <div class="project-group" aria-labelledby="metal-heading">
           <h3 id="metal-heading">Metal</h3>
           <div class="folder-grid">
-            <article class="project folder-card" data-tags="metal">
+            <a class="project folder-card" href="project-detail.html?project=removable-winch-plate" data-tags="metal">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Removable Winch Plate</h4>
               <p>Designed, cut, and welded hitch receiver mount for carrying a winch during off-road self recovery.</p>
-            </article>
-            <article class="project folder-card" data-tags="metal">
+            </a>
+            <a class="project folder-card" href="project-detail.html?project=c-clamp" data-tags="metal">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>C-Clamp</h4>
               <p>School project using lathe-made screw and pad components with a bandsaw and mill-shaped frame.</p>
-            </article>
-            <article class="project folder-card" data-tags="metal">
+            </a>
+            <a class="project folder-card" href="project-detail.html?project=tire-changer-upgrades" data-tags="metal">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Tire Changer Upgrades</h4>
               <p>Reinforced and improved a Harbor Freight tire changer for more practical use.</p>
-            </article>
-            <article class="project folder-card" data-tags="metal">
+            </a>
+            <a class="project folder-card" href="project-detail.html?project=metal-die-and-stand" data-tags="metal">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Metal Die and Stand</h4>
               <p>Aluminum die milled into shape with a sand cast display stand.</p>
-            </article>
-            <article class="project folder-card" data-tags="metal">
+            </a>
+            <a class="project folder-card" href="project-detail.html?project=lathe-tool" data-tags="metal">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Lathe Tool</h4>
               <p>Tool steel blank shaped with a grinding wheel into a functional lathe tool.</p>
-            </article>
+            </a>
           </div>
         </div>
 
         <div class="project-group" aria-labelledby="wood-heading">
           <h3 id="wood-heading">Wood</h3>
           <div class="folder-grid">
-            <article class="project folder-card" data-tags="wood">
+            <a class="project folder-card" href="project-detail.html?project=chicken-coop" data-tags="wood">
               <div class="folder-tab" aria-hidden="true"></div>
               <h4>Chicken Coop</h4>
               <p>Designed and built a chicken coop from spare wood in the family yard.</p>
-            </article>
+            </a>
           </div>
         </div>
       </section>
@@ -188,6 +192,6 @@
       </div>
     </footer>
 
-    <script src="src/scripts.js"></script>
+    <script src="src/scripts.min.js" defer></script>
   </body>
 </html>

@@ -4,7 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Home | Emily Caldwell</title>
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="images/optimized/jeep-line-art.webp" fetchpriority="high" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" /></noscript>
+    <link rel="stylesheet" href="src/styles.min.css" />
   </head>
   <body class="home-page">
     <header class="home-hero" aria-labelledby="home-heading">
@@ -21,7 +26,7 @@
       </nav>
 
       <div class="home-line-art" aria-hidden="true">
-        <img src="images/jeep-line-art.png" alt="Jeep line art" width="2400" height="2152" />
+        <img src="images/optimized/jeep-line-art.webp" alt="Jeep line art" width="1000" height="897" fetchpriority="high" decoding="async" />
       </div>
 
       <div class="home-hero-copy">
@@ -37,27 +42,27 @@
         <div class="playbook-sticky">
           <div class="playbook-grid">
             <div class="playbook-layer">
-              <div><img src="images/home/20221220-123703-2.jpg" alt="Cutting metal with a torch" /></div>
-              <div><img src="images/home/20230306-IMG_1343.jpg" alt="Grinding a Jeep axle" /></div>
-              <div><img src="images/home/20250727-0W4A8974.jpg" alt="Cutting metal with an angle grinder" /></div>
-              <div><img src="images/home/20260516-R7__8763.jpg" alt="Sawing wood at a workbench" /></div>
-              <div><img src="images/home/20260530-R7__1772.jpg" alt="Notching a wooden post" /></div>
-              <div><img src="images/home/20210108-IMG_5962.jpg" alt="Emily working under a Truck" /></div>
+              <div><img src="images/optimized/home/20221220-123703-2.webp" alt="Cutting metal with a torch" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/20230306-IMG_1343.webp" alt="Grinding a Jeep axle" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/20250727-0W4A8974.webp" alt="Cutting metal with an angle grinder" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/20260516-R7__8763.webp" alt="Sawing wood at a workbench" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/20260530-R7__1772.webp" alt="Notching a wooden post" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/20210108-IMG_5962.webp" alt="Emily working under a Truck" loading="lazy" decoding="async" /></div>
             </div>
             <div class="playbook-layer">
-              <div><img src="images/home/20250614-0W4A8563.jpg" alt="Sanding the paint inside a Jeep" /></div>
-              <div><img src="images/home/20230313-IMG_1361.jpg" alt="Welding a Jeep frame" /></div>
-              <div><img src="images/emily-caldwell-about.jpg" alt="Emily showing off her work" /></div>
-              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
-              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
-              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/optimized/home/20250614-0W4A8563.webp" alt="Sanding the paint inside a Jeep" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/20230313-IMG_1361.webp" alt="Welding a Jeep frame" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/emily-caldwell-about.webp" alt="Emily showing off her work" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/emily-caldwell-about.webp" alt="" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/emily-caldwell-about.webp" alt="" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/emily-caldwell-about.webp" alt="" loading="lazy" decoding="async" /></div>
             </div>
             <div class="playbook-layer">
-              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
-              <div><img src="images/emily-caldwell-about.jpg" alt="" /></div>
+              <div><img src="images/optimized/emily-caldwell-about.webp" alt="" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/emily-caldwell-about.webp" alt="" loading="lazy" decoding="async" /></div>
             </div>
             <div class="playbook-scaler">
-              <img src="images/home/20221224-221242.jpg" alt="Welding metal tubing" />
+              <img src="images/optimized/home/20221224-221242.webp" alt="Welding metal tubing" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -78,6 +83,6 @@
       </div>
     </footer>
 
-    <script src="src/scripts.js"></script>
+    <script src="src/scripts.min.js" defer></script>
   </body>
 </html>
