@@ -14,19 +14,25 @@ Then open `http://localhost:8000`.
 
 ## Pages
 
-- `index.html` - Home and about page
-- `projects.html` - Projects listing with filters
+- `index.html` - Portfolio home page
+- `about.html` - About page
+- `projects.html` - Project listing with category filters
+- `project-detail.html?project=<project-slug>` - Shared project-specific detail page with a photo gallery, overview, requirements, and skills
 - `contact.html` - Dark-mode contact page with resume download
 - `terms.html` - Terms and conditions page
 - `privacy.html` - Privacy policy page
 
-## Contact Page Updates
+## Project Details
 
-- Rebuilt the contact page from `docs/contact-wireframe.png`.
-- Added a logo image placeholder button that links back to the home page.
-- Added contact details for Emily Caldwell and a resume download button linked to `files/Resume.pdf`.
-- Added a footer with credit text and links to Terms & Conditions and Privacy.
-- Added matching Terms and Privacy pages with the same visual system.
+Project-specific content is stored in the `projectDetails` object in `src/scripts.js`. Each project record contains its title, category, subtitle, gallery images, overview, requirements, and skills.
+
+The current project pages cover:
+
+- Plastics: Modular Roof Rack System, Wheel Center Caps, Misc. Car Parts, and Planetary Gears
+- Metal: Removable Winch Plate, C-Clamp, Tire Changer Upgrades, Metal Die and Stand, and Lathe Tool
+- Wood: Chicken Coop
+
+The finished overview copy is based on `docs/overviews.txt`. Requirements and skills are maintained directly in `src/scripts.js`.
 
 ## Design Notes
 
@@ -40,12 +46,14 @@ Then open `http://localhost:8000`.
   - White: `#FFFFFF`
   - Royal Blue: `#4A6DE5`
   - Regal Navy: `#033D7D`
-- The contact, terms, and privacy pages use a dark editorial style with high contrast, visible focus states, semantic headings, accessible link labels, and minimal JavaScript.
+- The site uses a dark editorial style with high contrast, visible focus states, semantic headings, accessible labels, and lightweight JavaScript.
 
 ## Assets
 
 - `files/Resume.pdf` - Resume download target
 - `src/logo-placeholder.svg` - Temporary logo placeholder
-- `docs/contact-wireframe.png` - Contact page wireframe reference
+- `docs/overviews.txt` - Source copy for project overviews
+- `docs/project-list.md` - Project category and summary reference
+- `images/optimized/projects/` - Optimized project gallery images
 
-Replace placeholder logo/media assets as final branding and project imagery become available.
+Replace the placeholder logo when final branding becomes available.

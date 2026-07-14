@@ -1,0 +1,38 @@
+ROOF RACK
+Overview
+This roof rack mounting system was designed to fit on a 2000 Jeep Cherokee in order to easily attach various tools and off-roading gear to the roof. I wanted it to be simple yet effective so I made it modular so that the user could switch out the top piece depending on the tool they were going to mount. There is a middle and bottom piece that wrap around the crossbars of the roof rack as well as an interchangeable top piece depending on the gear that needs to be mounted. The stack is secured with a bolt on either side and a Nylock Nut to prevent it from coming apart due to vibration when driving. 
+In order to make it fit the roof rack properly I first had to model the crossbar in Fusion 360 and then model the bracket pieces around it. With limited resources, I needed to go through some trial and error to get the proper fit, printing prototypes and adjusting the fit bit by bit to get the correct profile. I 3D printed it out of ABS and lined the inner surface with neoprene to protect the crossbar and compensate for any imperfections in the profile. In order to attach the shovel to the bracket I used adjustable hose clamps that fit into a slot on the mounting piece.
+
+WHEEL CENTER CAPS
+Overview
+The center caps were meant to fit on the wheels of family cars to protect the wheel hubs from unnecessary dirt and moisture. The tolerances for this project were critical because the design needed to be thin enough to not disrupt the fit of the wheel. A certain amount of compression in the plastic also needs to be taken into consideration. Before using it, you need to compress the mating edge past the point of plastic deformation to ensure it doesn't change thicknesses while it is in use. If you don't do this, the plastic will compress and become thinner and the lug nuts will no longer be tightened to the correct torque, which will cause them to vibrate off and the tire to come off.
+The wheels were measured for size and fit and then prototypes were designed in Fusion 360 and 3D printed to test for the proper balance between tolerances and durability so that it doesn't fall apart when changing or rotating the tires and so that it fits properly and doesn't cause the wheels to come off while driving. 
+
+PLANETARY GEAR
+Overview
+The planetary gear project was a school project meant to teach students about how gears were designed and how the different sizes effect rotating speed and direction. We were tasked with designing a set of gears and case using the provided materials and a self-made list of hardware. The designing was done using Solidworks as well as the coding for the CNC mill used to cut the gears out of a thick sheet of ABS. The case was laser cut from acrylic and assembled with acetone.
+
+WINCH PLATE
+Overview
+Most winch plates for off-roading are built into the bumper but we needed one that could be removed and transferred from vehicle to vehicle. I designed a winch plate that would mount onto a hitch receiver and only used remnant metal found around the property. It needed to be strong enough to hold the winch as well as be able to withstand the forces of the winch in use, pulling a car out of a difficult situation. I used an oxy-acetylene torch and a plasma cutter to cut out the parts and stick welded it together. A drill press was used to make the holes to mount the face plate to the front. 
+
+C-CLAMP
+Overview
+This C-clamp was fully machined from scratch aside from the ball bearing used for the swivel pad. It was a school final project meant to prove what we learned about machining in class. The screw was machined on a lathe and the frame was made out of steel using a band saw and a mill. We were required to demonstrate our ability to cut working threads on the lathe and understand the different cutting techniques on a mill to get the desired results.
+
+TIRE CHANGER UPGRADES
+Overview
+My family got a tire changer from Harbor Freight so we could change the tires on our cars ourselves but it was a bit too weak for our large truck and off-roading tires so the base was warping because it couldn't handle the stress. It needed an upgraded base and arm that would extend to better fit the larger wheels and tires we use. All the metal came from the remnants section of the local metal shop and were cut to size and shape using a plasma cutter. All the welds were done using MIG Welding. The plates used to secure the wheel to tire changer were made by laying out the lug nut pattern for each of the different wheels and then using a drill press and boring bar to make the holes.
+
+METAL DIE AND STAND
+Overview
+The die is an aluminum project from school, meant to teach us the basics of milling. We were meant to learn control as well as a couple different cutting tools and techniques. The stand for the die was another project in which we learned how to sand cast aluminum. I casted it using a 3D printed model to make the mold and then I sand blasted it. 
+
+LATHE TOOL
+Overview
+The lathe tool was my first experience with tool making. It was a school project in which we were expected to make a useable tool for our lathe projects out of a high speed steel blank using a bench grinder. We needed to have sharp cutting edges as well as appropriate relief and rake angles. The goal was to be able to use this tool on our future projects in our machining class.
+
+
+CHICKEN COOP
+Overview
+The Chicken Coop project was a wood build for a small group of backyard chickens. The coop got a basic model in Fusion 360 to figure out general dimensions and was built using reclaimed wood and spare hardware. The biggest challenge was designing the structure around dimensions that would utilize only the material available with minimal waste. The only material that was purchased for this project was some wood glue and the chicken wire. Joining techniques used on the build include lap joints and woodworking biscuiting. The chickens needed a strong and safe structure to go into at night in order to protect them from a wide array of predators and they also needed a small area to be able to go outside and eat and scratch while still remaining protected. 
