@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded',()=>{
       images:['images/optimized/projects/plastics/misc-car-parts-01.webp','images/optimized/projects/plastics/misc-car-parts-02.webp'],
       alt:'Small 3D printed automotive replacement parts',
       overview:[
-        'Misc. Car Parts is a collection of small printed supports, clips, covers, and replacement pieces made for parts that are difficult to find or replace. This placeholder overview will eventually identify each part and explain the problem it solved on the car.',
-        'The objective was to use quick digital fabrication for practical maintenance problems. The finished page can cover how each part was measured, modeled, printed, tested, and adjusted, along with any challenges around heat, clearance, brittleness, or matching original part geometry.'
+        'While working on family vehicles, there are often small parts that are difficult, expensive, or impossible to replace. As a result, I use Fusion 360 to model parts that work in these various scenarios, then 3D print them to test and adjust as necessary.',
+        'A few examples include a small brace, printed in ABS, to support and secure an aftermarket radio and a TPU terminal cover custom-made to fit the larger, unusually shaped positive terminal of a car battery.'
       ],
       requirements:['Replace or support parts that are hard to source.','Fit existing vehicle geometry without interfering with nearby components.','Use printable forms that can be adjusted quickly after test fitting.'],
       skills:['Fusion 360','3D Printing','CAD','Automotive Repair','Problem Solving']

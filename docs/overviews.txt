@@ -32,7 +32,10 @@ LATHE TOOL
 Overview
 The lathe tool was my first experience with tool making. It was a school project in which we were expected to make a useable tool for our lathe projects out of a high speed steel blank using a bench grinder. We needed to have sharp cutting edges as well as appropriate relief and rake angles. The goal was to be able to use this tool on our future projects in our machining class.
 
-
 CHICKEN COOP
 Overview
 The Chicken Coop project was a wood build for a small group of backyard chickens. The coop got a basic model in Fusion 360 to figure out general dimensions and was built using reclaimed wood and spare hardware. The biggest challenge was designing the structure around dimensions that would utilize only the material available with minimal waste. The only material that was purchased for this project was some wood glue and the chicken wire. Joining techniques used on the build include lap joints and woodworking biscuiting. The chickens needed a strong and safe structure to go into at night in order to protect them from a wide array of predators and they also needed a small area to be able to go outside and eat and scratch while still remaining protected. 
+
+MISC CAR PARTS
+Overview
+While working on family vehicles, there are often small parts that are difficult, expensive, or impossible to replace. As a result, I would use Fusion 360 to model parts that would work in these various scenarios and 3D print them to test and adjust as necessary. A few examples of this include a small brace to support and secure an aftermarket radio, printed in ABS; and a TPU terminal cover to protect the positive terminal of a car battery, custom made to fit the terminal's larger and more unusual shape.
