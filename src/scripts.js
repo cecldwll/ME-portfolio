@@ -1,5 +1,71 @@
 document.addEventListener('DOMContentLoaded',()=>{
   const motionAllowed=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const mobileHome=window.matchMedia('(max-width: 760px)').matches;
+
+  const homeLoader=document.querySelector('.willem-loader');
+  if(homeLoader){
+    const loaderMedia=homeLoader.querySelector('.willem-loader__media');
+    const loaderFreeze=homeLoader.querySelector('.willem-loader__freeze');
+    let loaderFinished=false;
+
+    const revealHome=()=>{
+      if(loaderFinished) return;
+      loaderFinished=true;
+      window.setTimeout(()=>{
+        homeLoader.classList.add('is-media-cleared');
+        window.setTimeout(()=>{
+          document.body.classList.remove('home-loader-active');
+          document.body.classList.add('home-intro-complete');
+          homeLoader.classList.add('is-finished');
+          window.setTimeout(()=>homeLoader.remove(),900);
+        },450);
+      },1500);
+      homeLoader.classList.add('is-expanded');
+    };
+
+    if(!motionAllowed || mobileHome){
+      document.body.classList.remove('home-loader-active');
+      document.body.classList.add('home-intro-complete');
+      homeLoader.remove();
+    }else{
+      document.body.classList.add('home-loader-active');
+      const startLoader=()=>window.setTimeout(()=>{
+        homeLoader.classList.add('is-open');
+        window.setTimeout(()=>{
+          let gifTimingStarted=false;
+          const finishGif=()=>{
+            if(gifTimingStarted) return;
+            gifTimingStarted=true;
+            window.setTimeout(()=>{
+              if(loaderFreeze) homeLoader.classList.add('is-frozen');
+              window.requestAnimationFrame(revealHome);
+            },1500);
+          };
+          if(loaderMedia){
+            if(loaderFreeze?.dataset.src) loaderFreeze.src=loaderFreeze.dataset.src;
+            loaderMedia.addEventListener('load',finishGif,{once:true});
+            if(loaderMedia.dataset.src) loaderMedia.src=loaderMedia.dataset.src;
+            if(loaderMedia.complete && loaderMedia.naturalWidth) finishGif();
+          }else revealHome();
+        },1000);
+      },900);
+      startLoader();
+      loaderMedia?.addEventListener('error',revealHome,{once:true});
+      window.setTimeout(revealHome,15000);
+    }
+  }
+
+  const homeMenuToggle=document.querySelector('.home-menu-toggle');
+  const homeNavPanel=document.querySelector('.home-nav-panel');
+  if(homeMenuToggle && homeNavPanel){
+    const setHomeMenu=(open)=>{
+      homeMenuToggle.setAttribute('aria-expanded',String(open));
+      homeMenuToggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+      homeNavPanel.classList.toggle('is-open',open);
+    };
+    homeMenuToggle.addEventListener('click',()=>setHomeMenu(homeMenuToggle.getAttribute('aria-expanded')!=='true'));
+    homeNavPanel.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setHomeMenu(false)));
+  }
 
   const projectDetails={
     'modular-roof-rack-system':{

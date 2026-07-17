@@ -4,19 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Home | Emily Caldwell</title>
+    <link rel="icon" type="image/png" href="images/optimized/fullcolor-favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="image" href="images/optimized/jeep-line-art.webp" fetchpriority="high" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" />
+    <link rel="preload" as="image" href="images/optimized/jeep-line-art-720.webp" imagesrcset="images/optimized/jeep-line-art-720.webp 720w, images/optimized/jeep-line-art.webp 1000w" imagesizes="(max-width:760px) 92vw, (max-width:1120px) 58vw, 42rem" fetchpriority="high" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;650;750;800;900&family=Playfair+Display:wght@600;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400;650;750;800;900&family=Playfair+Display:wght@600;800&display=swap" /></noscript>
     <link rel="stylesheet" href="src/styles.min.css" />
   </head>
-  <body class="home-page">
+  <body class="home-page home-loader-active">
+    <div class="willem-loader" aria-hidden="true">
+      <div class="willem-loader__name">
+        <span class="willem-loader__word">Emily</span>
+        <span class="willem-loader__media-wrap">
+          <img class="willem-loader__media" data-src="images/optimized/Zzzzz-loader.gif" alt="" decoding="async" />
+          <img class="willem-loader__freeze" data-src="images/optimized/Zzzzz-end.webp" alt="" aria-hidden="true" decoding="async" />
+        </span>
+        <span class="willem-loader__word">Caldwell</span>
+      </div>
+    </div>
+
     <header class="home-hero" aria-labelledby="home-heading">
       <nav class="home-nav" aria-label="Primary navigation">
         <a class="home-logo" href="index.html" aria-label="Emily Caldwell home">
-          <img src="src/logo-placeholder.svg" alt="" width="64" height="64" />
+          <img src="images/optimized/fullcolor-logo.webp" alt="" width="64" height="64" />
         </a>
-        <div class="home-nav-panel">
+        <button class="home-menu-toggle" type="button" aria-expanded="false" aria-controls="home-nav-links" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="home-nav-panel" id="home-nav-links">
           <a href="index.html" aria-current="page">Home</a>
           <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
@@ -25,7 +41,7 @@
       </nav>
 
       <div class="home-line-art" aria-hidden="true">
-        <img src="images/optimized/jeep-line-art.webp" alt="Jeep line art" width="1000" height="897" fetchpriority="high" decoding="async" />
+        <img src="images/optimized/jeep-line-art-720.webp" srcset="images/optimized/jeep-line-art-720.webp 720w, images/optimized/jeep-line-art.webp 1000w" sizes="(max-width:760px) 92vw, (max-width:1120px) 58vw, 42rem" alt="Jeep line art" width="1000" height="897" fetchpriority="high" decoding="async" />
       </div>
 
       <div class="home-hero-copy">
@@ -41,24 +57,24 @@
         <div class="playbook-sticky">
           <div class="playbook-grid">
             <div class="playbook-layer">
-              <div><img src="images/optimized/home/20221220-123703-2.webp" alt="Cutting metal with a torch" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20230306-IMG_1343.webp" alt="Grinding a Jeep axle" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20250727-0W4A8974.webp" alt="Cutting metal with an angle grinder" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20260516-R7__8763.webp" alt="Sawing wood at a workbench" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20260530-R7__1772.webp" alt="Notching a wooden post" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20210108-IMG_5962.webp" alt="Emily working under a Truck" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20221220-123703-2.webp" alt="Cutting metal with a torch" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20230306-IMG_1343.webp" alt="Grinding a Jeep axle" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20250727-0W4A8974.webp" alt="Cutting metal with an angle grinder" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20260516-R7__8763.webp" alt="Sawing wood at a workbench" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20260530-R7__1772.webp" alt="Notching a wooden post" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20210108-IMG_5962.webp" alt="Emily working under a Truck" loading="lazy" decoding="async" /></div>
             </div>
             <div class="playbook-layer">
-              <div><img src="images/optimized/home/20250614-0W4A8563.webp" alt="Sanding the paint inside a Jeep" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20230313-IMG_1361.webp" alt="Welding a Jeep frame" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20221224-221242.webp" alt="Welding metal tubing on a workbench" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20200327-152738.webp" alt="Welding a metal bracket on a garage floor" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20200327-152738.webp" alt="Welding a metal bracket on a garage floor" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20180310-182800.webp" alt="Soldering components on a circuit board" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20250614-0W4A8563.webp" alt="Sanding the paint inside a Jeep" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20230313-IMG_1361.webp" alt="Welding a Jeep frame" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20221224-221242.webp" alt="Welding metal tubing on a workbench" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20200327-152738.webp" alt="Welding a metal bracket on a garage floor" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20200327-152738.webp" alt="Welding a metal bracket on a garage floor" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20180310-182800.webp" alt="Soldering components on a circuit board" loading="lazy" decoding="async" /></div>
             </div>
             <div class="playbook-layer">
-              <div><img src="images/optimized/home/20191124-img_3480.webp" alt="Checking a car wheel near the front fender" loading="lazy" decoding="async" /></div>
-              <div><img src="images/optimized/home/20191026-img_2882.webp" alt="Working beside a car wheel in the driveway" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20191124-img_3480.webp" alt="Checking a car wheel near the front fender" loading="lazy" decoding="async" /></div>
+              <div><img src="images/optimized/home/thumbs/20191026-img_2882.webp" alt="Working beside a car wheel in the driveway" loading="lazy" decoding="async" /></div>
             </div>
             <div class="playbook-scaler">
               <img src="images/optimized/home/20250727-075213-_MG_0908.webp" alt="Measuring metal stock beside a Jeep" loading="lazy" decoding="async" />
